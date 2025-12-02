@@ -232,6 +232,9 @@ type ContainersConfig struct {
 	// default for the runtime.
 	SeccompProfile string `toml:"seccomp_profile,omitempty"`
 
+	// SeccompProfiles is a set of additional seccomp profiles.
+	SeccompProfiles map[string]string `toml:"seccomp_profiles,omitempty"`
+
 	// ShmSize holds the size of /dev/shm.
 	ShmSize string `toml:"shm_size,omitempty"`
 
